@@ -206,8 +206,9 @@ button {
     align-self: flex-end;
 }
 
-.hero__image--blur {
+.section__image--blur {
     position: absolute;
+    z-index: 1;
     border-radius: 50%;
     left: 0;
     right: 0;
@@ -228,8 +229,348 @@ button {
     border-radius: 110px;
 }
 
+/* brand */
 .brand {
     margin-top: 42px;
+}
+.brand__list {
     background: #e2eddf;
     border-radius: 100.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 76px 121px;
+}
+.brand-item__google {
+    color: #143c3c;
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.brand-item__icon {
+    color: #143c3c;
+}
+
+.brand-item__slack {
+    color: #143c3c;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.brand-item__agworld {
+    color: #163c35;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.brand-item__rioTinto {
+    color: #163c35;
+    font-family: "Sonsie One", system-ui;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.brand-item__heroku {
+    color: #143c3c;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
+}
+
+/* service */
+.service {
+    margin-top: 53px;
+    padding: 53px 0 78px;
+}
+
+.section__subtitle {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+    padding-left: 46px;
+}
+
+.section__subtitle::before {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background: var(--primary-color);
+}
+
+.section__heading {
+    position: relative;
+    max-width: 520px;
+    color: var(--primary-color);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23; /* 123.81% */
+}
+
+.section__heading::after {
+    position: absolute;
+    right: 103px;
+    bottom: 19px;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.service-header__control-btn {
+    display: flex;
+    column-gap: 17px;
+}
+
+.control-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #e2eddf;
+}
+
+.control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.control-btn__right {
+    rotate: 180deg;
+}
+
+.service__list {
+    margin-top: 76px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+}
+
+.service-item {
+    border-radius: 20px;
+}
+.service-item:hover {
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service-item:hover .service-item__body {
+    padding-left: 18px;
+}
+
+.service-item__body {
+    padding: 23px 0;
+    transition: 0.25s;
+}
+.service-item__thumb {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.service-item__img {
+    width: 100%;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    transition: 0.25s;
+}
+
+.service-item__link {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    max-width: 268px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* team */
+.team {
+    margin-top: 78px;
+    padding-bottom: 43px;
+}
+
+.team__body {
+    display: flex;
+    justify-content: space-between;
+}
+.team__image {
+    height: 570px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 21px;
+    position: relative;
+}
+.team__img {
+    z-index: 2;
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px;
+    box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+/* .team__img:first-child {
+    align-self: flex-end;
+} */
+
+.team__img + .team__img {
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.team-designer {
+    z-index: 3;
+    position: absolute;
+    right: -9px;
+    bottom: -8px;
+    padding: 19px 23px 11px;
+    font-family: "Public Sans", sans-serif;
+    width: 143px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.team-designer__heading {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+}
+.team-designer__stat {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.team-designer__desc {
+    margin-top: 6px;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0.4;
+}
+
+.team-designer__process-max {
+    margin: 3px 0;
+    width: 100%;
+    background: #eaeaea;
+    height: 2px;
+}
+
+.team-designer__process-now {
+    width: 40%;
+    height: 2px;
+    background: #83a17d;
+}
+
+.team-designer__load {
+    display: block;
+    text-align: right;
+    color: #152427;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.team-designer__status {
+    margin-top: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #143c3c;
+    border: 3px solid #eaeaea;
+}
+.team-designer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-designer__label {
+    color: #152427;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.team-designer__members {
+    display: flex;
+}
+
+.member__avatar {
+    margin-left: -5px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*  */
+.team-content {
+    width: 43%;
+}
+.team__heading {
+    margin-bottom: 11px;
+    color: var(--primary-color);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.team__decor {
+    z-index: 3;
+    position: absolute;
+    left: 46px;
+    top: -18px;
+}
+
+.team__decor:last-child {
+    left: 90px;
+    top: -22px;
+}
+
+.team-content__row {
+    padding: 36px 0 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    border-bottom: 1px solid #83a17d;
+}
+.team-content__stat {
+    color: var(--primary-color);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
+}
+
+.team-content__desc {
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
 }

@@ -997,6 +997,7 @@ button {
 }
 
 .footer__social {
+    column-gap: 22px;
     margin-top: 47px;
     display: flex;
     align-items: center;

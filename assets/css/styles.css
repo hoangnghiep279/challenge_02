@@ -701,3 +701,140 @@ button {
     font-weight: 500;
     line-height: 1.55;
 }
+
+/* project  */
+.project {
+    padding: 116px 0 63px;
+    background: #143c3c;
+}
+
+.project__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project__heading {
+    color: #e7f9f9;
+    max-width: 457px;
+    position: relative;
+}
+
+.project__heading::after {
+    position: absolute;
+    bottom: 20px;
+    right: 97px;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: #83a17d;
+}
+
+.project__info {
+    font-family: "Public Sans", sans-serif;
+}
+.project__desc {
+    max-width: 590px;
+    color: #6a8383;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.project__link-browse {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.project__link {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.project__arrow {
+    color: #80a07b;
+}
+
+.project__video {
+    margin-top: 65px;
+    width: 100%;
+}
+
+/* feature */
+.feature {
+    margin: 140px 0 92px;
+}
+
+.feature__content {
+    text-align: center;
+}
+
+.feature__heading {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.feature__desc {
+    width: 547px;
+    margin: 20px auto 0;
+}
+
+.feature__row {
+    margin-top: 44px;
+    display: flex;
+    align-items: flex-end;
+    height: 421px;
+    column-gap: 45px;
+}
+
+.feature-item {
+    padding: 60px 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 362px;
+    border-radius: 160px;
+    background: #fff;
+    border: 1.5px solid #cecece;
+    transition: 0.25s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    background: #fff;
+    border: none;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+}
+
+.feature-item:nth-child(2) {
+    align-self: flex-start;
+}
+
+.feature-item__icon {
+    font-size: 4.5rem;
+}
+
+.feature-item__heading {
+    margin-top: 23px;
+    color: #152427;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.feature-item__desc {
+    margin-top: 12px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+}

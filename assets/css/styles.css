@@ -8,6 +8,10 @@
 html {
     font-size: 62.5%;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 body {
     font-size: 1.6rem;
@@ -67,8 +71,11 @@ button {
 }
 /* header */
 .header {
+    position: sticky;
+    top: -30px;
+    background-color: #fff;
+    z-index: 4;
     padding-top: 28px;
-    min-height: 100vh;
     font-family: "Public Sans", sans-serif;
 }
 
@@ -354,6 +361,7 @@ button {
 }
 .service-header__control-btn {
     display: flex;
+    align-items: center;
     column-gap: 17px;
 }
 
@@ -882,7 +890,7 @@ button {
     height: 564px;
 }
 .blog-item:hover {
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 40px 40px 20px 20px;
     background: #fff;
     box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
 }
@@ -949,26 +957,22 @@ button {
     font-weight: 500;
     line-height: 1.2;
 }
-
 /* footer */
 .footer {
     margin-top: 51px;
     background-color: #143c3c;
     padding: 72px 0 50px;
 }
-
 .footer__row {
     display: grid;
     grid-template-columns: 59% 7% 7% 7% 7%;
     column-gap: 50px;
 }
-
 .footer__heading {
     color: #fff;
     font-size: 3.2rem;
     font-weight: 500;
 }
-
 .footer-form {
     margin-top: 25px;
     display: inline-flex;
@@ -978,24 +982,26 @@ button {
     border-bottom: 1px solid #6a8383;
 }
 .footer-form__input {
+    padding: 3px;
     min-width: 183px;
     border: none;
+    outline: none;
     background: transparent;
     color: #fff;
 }
+
 .footer-form__input::placeholder {
     color: #6a8383;
     font-size: 2.1rem;
     font-weight: 600;
     line-height: 2.1;
 }
-
 .footer-form__btn {
+    cursor: pointer;
     border: none;
     outline: none;
     background: transparent;
 }
-
 .footer__social {
     column-gap: 22px;
     margin-top: 47px;
@@ -1019,7 +1025,6 @@ button {
 .footer__column {
     font-family: "Public Sans", sans-serif;
 }
-
 .footer__desc {
     color: #fff;
     font-size: 1.8rem;
@@ -1029,14 +1034,12 @@ button {
 .footer__list {
     margin-top: 6px;
 }
-
 .footer__link {
     color: #6a8383;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.25;
 }
-
 .footer__copyright {
     margin-top: 42px;
     height: 1px;
